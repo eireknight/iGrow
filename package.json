@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eireknight/Final-Project.git"
+    "url": "git+https://github.com/eireknight/iGrow.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/eireknight/Final-Project/issues"
+    "url": "https://github.com/eireknight/iGrow/issues"
   },
   "dependencies": {
     "concurrently": "^5.2.0",
@@ -29,6 +29,8 @@
     "mongojs": "^3.1.0",
     "mongoose": "^5.9.25",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "passport": "^0.4.1",
+    "passport-google-oauth": "^2.0.0"
   }
 }

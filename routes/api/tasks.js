@@ -1,14 +1,23 @@
-const router = require("express").Router();
-const tasksController = require("../../controllers/tasksController");
+var express = require("express");
+var router = express.Router();
+var passport = require("passport");
 
-router.route("/tasks")
-  .get(tasksController.findAll)
-  .post(tasksController.create);
+router.get("/", function(req, res, next) {
+	res.render("index", { title: "Express" });
+});
 
-router
-  .route("/tasks/:id")
-  .get(tasksController.findById)
-  .put(tasksController.update)
-  .delete(tasksController.remove);
+router.get(
+	"/auth/google",
+	passport.authenticate("google", { scope: ["profile", "email"] })
+);
+
+router.get(
+	"/auth/google/callback",
+	passport.authenticate("google", { failureRedirect: "/", session: false }),
+	function(req, res) {
+		var token = req.user.token;
+		res.redirect("http://localhost:3000?token=" + token);
+	}
+);
 
 module.exports = router;

@@ -36,7 +36,7 @@ function Menu(props) {
             <Typography
               variant="h4"
               className={classes.grow}
-              centered
+              centered="true"
             >
               iGrow
             </Typography>
