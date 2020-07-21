@@ -1,0 +1,50 @@
+{
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:3001",
+  "dependencies": {
+    "@material-ui/core": "^3.9.2",
+    "@material-ui/icons": "^3.0.2",
+    "animejs": "^2.2.0",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.0",
+    "eslint": "^5.16.0",
+    "express": "^4.17.1",
+    "hookrouter": "^1.2.3",
+    "lodash.orderby": "^4.6.0",
+    "moment": "^2.27.0",
+    "react": "^16.8.4",
+    "react-bootstrap": "^1.0.1",
+    "react-chartjs": "^0.8.0",
+    "react-dom": "^16.8.4",
+    "react-modal": "^3.0.3",
+    "react-normalize": "^0.3.4",
+    "react-redux": "^7.2.0",
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.14",
+    "recharts": "^1.0.0-alpha.6",
+    "styled-components": "^2.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  },
+  "name": "client",
+  "description": "iGrow",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
+}
