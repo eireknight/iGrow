@@ -27,10 +27,9 @@ function Snapshot() {
         <Wrapper className="container">
             <ul>
             <h1>Look How Far You've Come!</h1>
-            <a href="/goal"> View Completed Goals</a>
+            <p>Completed Goals</p>
             <br></br>
-            <a href="/tasks"> View Completed Tasks</a>
-            <br></br>
+            <p>Completed Steps</p>
             </ul>
         </Wrapper>
     );

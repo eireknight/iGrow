@@ -61,6 +61,7 @@ const ListedTask = memo(props => (
               style={{
                 backgroundColor: primary,
                 borderRadius: 0,
+                marginTop: 8,
               }}
             
             >
